@@ -22,10 +22,7 @@
       class="ion-align-items-center"
     >
       <ion-col size="4" size-md="4" size-lg="3" size-xl="2">
-        <img
-          style="width: 100%; height: 100%; object-fit: cover; border-radius: 5px;"
-          [src]="article.urlToImage ? article.urlToImage : fallbackImageURL"
-        />
+        <img [src]="article.urlToImage || 'https://static.toiimg.com/photo/msid-99416197/99416197.jpg?pl=37494'" alt="Article Image" class="article-image"/>
       </ion-col>
       <ion-col size="8" size-md="8" size-lg="9" size-xl="10">
         <ion-label>
